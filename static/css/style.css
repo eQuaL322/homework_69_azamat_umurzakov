@@ -1,0 +1,48 @@
+.header {
+    font-style: normal;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#number-a {
+    margin-right: 20px;
+}
+
+button {
+    width: 40px;
+    height: 25px;
+    color: dodgerblue;
+    background-color: orange;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 5px 0 8px 1px black;
+    margin-right: 25px;
+}
+
+button:hover {
+    box-shadow: 5px 0 8px 1px purple;
+    background-color: orangered;
+    border: 1px solid blueviolet;
+}
+
+.result {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}

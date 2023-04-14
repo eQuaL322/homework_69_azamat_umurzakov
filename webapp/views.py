@@ -1,7 +1,10 @@
 import json
 from django.http import JsonResponse
+from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 
+@csrf_exempt
 def calculation(request, *args, **kwargs):
     if request.method == 'POST':
         numbers = json.loads(request.body)
@@ -33,3 +36,7 @@ def calculation(request, *args, **kwargs):
             return response
     response = JsonResponse({'error': 'Only POST method allowed!'})
     return response
+
+
+def index_view(request):
+    return render(request=request, template_name='index.html')
